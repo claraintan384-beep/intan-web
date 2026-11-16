@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | HIMASTI PERTIBA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="HIMASTI, kembali ke beranda">
+        <span class="brand-mark">H</span><span>HIMASTI<span class="brand-small">Himpunan Mahasiswa Sistem dan Teknologi Informasi</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="katalog.html">Program Kerja</a>
+        <a class="active" href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Hubungi kami</p>
+        <h1>Kontak HIMASTI</h1>
+        <p>Punya pertanyaan atau ingin mengetahui kegiatan HIMASTI? Silakan hubungi kami.</p>
+      </div>
+    </section>
+
+    <section class="section container contact-layout">
+      <div class="contact-info">
+        <p class="eyebrow">Informasi organisasi</p>
+        <h2>Mari terhubung</h2>
+        <p><strong>Alamat</strong><br>Universitas PERTIBA,JI. Adhyaksa No. 9, Kelurahan Kejaksaan, Kecamatan Taman Sari, Kota Pangkalpinang, Provinsi Kepulauan Bangka Belitung 33123</p>
+        <p><strong>Instagram</strong><br><a href="https://www.instagram.com/himasti_uniper?psln=MWZqd3JqYXIzcnBsNw==/" target="_blank" rel="noopener">https://www.instagram.com/himasti_uniper?psln=MWZqd3JqYXIzcnBsNw==</a></p>
+        <p><strong>Email</strong><br><a href="mailto:himasti02@gmail.com">himasti02@gmail.com</a></p>
+        <div class="map-frame">
+          <iframe title="Peta lokasi Universitas PERTIBA" src="https://www.google.com/maps?q=Universitas%20PERTIBA%20Pangkalpinang&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="form-panel">
+        <h2>Kirim pesan</h2>
+        <p class="muted">Isi formulir berikut dengan data yang benar.</p>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="nama">Nama lengkap</label>
+            <input id="nama" name="nama" type="text" placeholder="Masukkan nama lengkap" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Alamat email</label>
+            <input id="email" name="email" type="email" placeholder="nama@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="telepon">Nomor HP</label>
+            <input id="telepon" name="telepon" type="tel" pattern="[0-9]{10,13}" title="Masukkan 10 sampai 13 digit angka tanpa spasi" placeholder="Contoh: 081234567890" required>
+          </div>
+          <div class="form-group">
+            <label for="keperluan">Keperluan</label>
+            <select id="keperluan" name="keperluan" required>
+              <option value="">Pilih keperluan</option>
+              <option value="Informasi organisasi">Informasi organisasi</option>
+              <option value="Program kerja">Program kerja</option>
+              <option value="Kerja sama">Kerja sama</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5" minlength="10" maxlength="500" placeholder="Tuliskan pesan (10–500 karakter)" required></textarea>
+            <small class="field-hint">Minimal 10 dan maksimal 500 karakter.</small>
+          </div>
+          <button class="button button-primary" type="submit">Kirim pesan</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Informasi tambahan</p>
+          <h2>Waktu kegiatan</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Hari</th><th>Kegiatan</th><th>Keterangan</th></tr></thead>
+            <tbody>
+              <tr><td>Senin–Jumat</td><td>Koordinasi pengurus</td><td>Sesuai kesepakatan</td></tr>
+              <tr><td>Sesuai agenda</td><td>Rapat dan diskusi</td><td>Informasi melalui pengurus</td></tr>
+              <tr><td>Sesuai jadwal</td><td>Program kerja</td><td> diumumkan melalui media sosial</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted small-note">Jadwal pada tabel adalah contoh format informasi, bukan jadwal resmi organisasi.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 HIMASTI. Website proyek UTS Pemrograman Web Dasar.</p>
+      <p>Universitas PERTIBA · Sistem dan Teknologi Informasi</p>
+    </div>
+  </footer>
+</body>
+</html>

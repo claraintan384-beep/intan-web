@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Kerja | HIMASTI UNIPER</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="HIMASTI, kembali ke beranda">
+        <span class="brand-mark">H</span><span>HIMASTI<span class="brand-small">Himpunan Mahasiswa Sistem dan Teknologi Informasi</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a class="active" href="katalog.html">Program Kerja</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Katalog kegiatan</p>
+        <h1>Program Kerja HIMASTI</h1>
+        <p>Contoh kegiatan yang dapat menjadi ruang belajar, berkarya, dan berbagi.</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="catalog-tools">
+        <label class="search-label" for="search-program">Cari program kerja</label>
+        <input id="search-program" class="search-input" type="search" placeholder="Ketik nama kegiatan...">
+        <label class="search-label" for="category-filter">Kategori</label>
+        <select id="category-filter" class="filter-select">
+          <option value="semua">Semua kategori</option>
+          <option value="akademik">Akademik</option>
+          <option value="organisasi">Organisasi</option>
+          <option value="sosial">Sosial</option>
+        </select>
+      </div>
+      <p class="muted small-note">Daftar berikut merupakan contoh rancangan program kerja. Sesuaikan nama dan pelaksanaannya dengan program resmi HIMASTI.</p>
+
+      <div class="catalog-grid" id="program-list">
+        <article class="catalog-card" data-category="akademik" data-name="Pelatihan Dasar Pemrograman">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Laptop yang digunakan untuk kegiatan belajar pemrograman">
+          <div class="card-body"><span class="tag">Akademik</span><h2>Pelatihan Dasar Pemrograman</h2><p>Pengenalan konsep pemrograman untuk meningkatkan kemampuan dasar mahasiswa.</p><p class="card-meta">Kategori: Pelatihan</p></div>
+        </article>
+        <article class="catalog-card" data-category="akademik" data-name="Workshop UI UX Design">
+          <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=900&q=80" alt="Tampilan rancangan antarmuka aplikasi pada layar">
+          <div class="card-body"><span class="tag">Akademik</span><h2>Workshop UI/UX Design</h2><p>Belajar dasar merancang antarmuka dan pengalaman pengguna aplikasi.</p><p class="card-meta">Kategori: Workshop</p></div>
+        </article>
+        <article class="catalog-card" data-category="akademik" data-name="Kompetisi Desain UI UX">
+          <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=80" alt="Berbagai contoh desain kreatif pada papan inspirasi">
+          <div class="card-body"><span class="tag">Akademik</span><h2>Kompetisi Desain UI/UX</h2><p>Ajang untuk menampilkan ide dan kreativitas dalam merancang solusi digital.</p><p class="card-meta">Kategori: Kompetisi</p></div>
+        </article>
+        <article class="catalog-card" data-category="organisasi" data-name="Diskusi dan Sharing Session">
+          <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=80" alt="Sekelompok orang mengikuti diskusi bersama">
+          <div class="card-body"><span class="tag">Organisasi</span><h2>Diskusi dan Sharing Session</h2><p>Forum berbagi pengalaman, ide, dan informasi seputar dunia perkuliahan.</p><p class="card-meta">Kategori: Diskusi</p></div>
+        </article>
+        <article class="catalog-card" data-category="sosial" data-name="Pengabdian Masyarakat">
+          <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=900&q=80" alt="Relawan bekerja sama dalam kegiatan sosial">
+          <div class="card-body"><span class="tag">Sosial</span><h2>Pengabdian Masyarakat</h2><p>Kegiatan berbagi pengetahuan teknologi dan membantu masyarakat sekitar.</p><p class="card-meta">Kategori: Sosial</p></div>
+        </article>
+        <article class="catalog-card" data-category="organisasi" data-name="Makrab dan Keakraban Anggota">
+          <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=80" alt="Suasana kebersamaan dalam kegiatan kelompok">
+          <div class="card-body"><span class="tag">Organisasi</span><h2>Makrab dan Keakraban Anggota</h2><p>Membangun hubungan yang akrab, rasa memiliki, dan kekompakan antaranggota.</p><p class="card-meta">Kategori: Kebersamaan</p></div>
+        </article>
+      </div>
+      <p id="empty-message" class="empty-message" hidden>Program kerja tidak ditemukan. Coba kata kunci atau kategori lain.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 HIMASTI. Website proyek UTS Pemrograman Web Dasar.</p>
+      <p>Universitas PERTIBA · Sistem dan Teknologi Informasi</p>
+    </div>
+  </footer>
+</body>
+</html>
